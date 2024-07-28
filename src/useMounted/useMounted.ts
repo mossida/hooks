@@ -5,8 +5,6 @@ export function useMounted() {
 
   useEffect(() => {
     setMounted(true);
-
-    return () => setMounted(false);
   }, []);
 
   return mounted;
